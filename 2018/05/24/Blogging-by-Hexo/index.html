@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Diwen&#39;s Coding Blog">
 <meta property="og:description" content="环境：CentOS 7 安装Node.js12345$ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash$ nvm install stable$ npm install -g hexo-cli 启动Hexo1234$ hexo init &amp;lt;folder&amp;gt;$ cd &amp;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-24T21:18:00.545Z">
+<meta property="og:updated_time" content="2018-05-27T06:37:00.148Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Blogging by Hexo">
 <meta name="twitter:description" content="环境：CentOS 7 安装Node.js12345$ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash$ nvm install stable$ npm install -g hexo-cli 启动Hexo1234$ hexo init &amp;lt;folder&amp;gt;$ cd &amp;">
@@ -26,8 +26,8 @@
 
   
 
-  <link rel="icon" href="/css/images/mylogo.jpg">
-  <link rel="apple-touch-icon" href="/css/images/mylogo.jpg">
+  <link rel="icon" href="/css/images/mylogo1.jpg">
+  <link rel="apple-touch-icon" href="/css/images/mylogo1.jpg">
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
@@ -86,8 +86,10 @@
             </button>
 
             
-              <a class="brand" style="border-width: 0;">
-                <p>Diwen&#39;s Coding Blog</p>
+              <a class="brand" style="
+                 margin-top: 0px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo1.jpg">
               </a>
             
             
@@ -97,10 +99,6 @@
                   <li> <a class="main-nav-link" href="/">Home</a> </li>
                 
                   <li> <a class="main-nav-link" href="/archives">Archives</a> </li>
-                
-                  <li> <a class="main-nav-link" href="/categories">Categories</a> </li>
-                
-                  <li> <a class="main-nav-link" href="/tags">Tags</a> </li>
                 
                   <li> <a class="main-nav-link" href="/about">About</a> </li>
                 
@@ -192,10 +190,12 @@
 <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>修改_config.yml文件。</p>
 <h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><p>创建新文章：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<p>创建新页面：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page &lt;page_name&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="部署到Github-Page"><a href="#部署到Github-Page" class="headerlink" title="部署到Github Page"></a>部署到Github Page</h2><p>安装hexo-deployer-git:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>修改配置文件_config.yml:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">	type: git</span><br><span class="line">	repo: https://github.com/demon90s/demon90s.github.io</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">	type: git</span><br><span class="line">	repo: git@github.com:demon90s/demon90s.github.io.git</span><br></pre></td></tr></table></figure>
 <p>部署命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <h2 id="选择主题"><a href="#选择主题" class="headerlink" title="选择主题"></a>选择主题</h2><p>see: <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank" rel="noopener">https://github.com/iTimeTraveler/hexo-theme-hiker</a></p>
@@ -236,6 +236,20 @@
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2018/05/27/C-显式转换和C语言的强制类型转换之间的区别/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          C++显式转换和C语言的强制类型转换之间的区别
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
   
 </article>
 
@@ -294,10 +308,6 @@
     <a href="/" class="mobile-nav-link">Home</a>
   
     <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/tags" class="mobile-nav-link">Tags</a>
   
     <a href="/about" class="mobile-nav-link">About</a>
   

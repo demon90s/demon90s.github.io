@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>阻塞模式与轮询模式 | Diwen&#39;s Coding Blog</title>
+  <title>centos7升级gcc版本 | Diwen&#39;s Coding Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
   
-  <meta name="description" content="在实际编程中，总会遇到一些相似的情况，比如最简单的Hello World程序，程序完成输出的目的后就结束了，这就可以将其总结为一种编程模式：【运行 -&amp;gt; 输出 -&amp;gt; 返回】，在课本的练习中这种模式很常见。 不过，这种模式的功能实在是有限，比如无法交互，无法处理不确定的事件，这往往是业务中所需要的。比如最简单的计算加法的结果，必须要求用户输入运算数字才能够进行计算： 123456789i">
+  <meta name="description" content="今天学习C++ Primer中的正则表达式部分的时候遇到一个问题，运行书本的程序后，必然会抛出regex_error的异常，在stackoverflow上面看到这是因为编译器版本的问题，我当前的gcc版本是4.8.5，还没能全部支持正则表达式库，需要升级到4.9.2。 升级的方法是从GNU官网上面下载相应的源码，然后本地编译安装。 步骤如下： 123456789101112131415$ wget">
 <meta property="og:type" content="article">
-<meta property="og:title" content="阻塞模式与轮询模式">
-<meta property="og:url" content="http://yoursite.com/2018/05/27/阻塞模式与轮询模式/index.html">
+<meta property="og:title" content="CentOS7升级gcc版本">
+<meta property="og:url" content="http://yoursite.com/2018/05/27/CentOS7升级gcc版本/index.html">
 <meta property="og:site_name" content="Diwen&#39;s Coding Blog">
-<meta property="og:description" content="在实际编程中，总会遇到一些相似的情况，比如最简单的Hello World程序，程序完成输出的目的后就结束了，这就可以将其总结为一种编程模式：【运行 -&amp;gt; 输出 -&amp;gt; 返回】，在课本的练习中这种模式很常见。 不过，这种模式的功能实在是有限，比如无法交互，无法处理不确定的事件，这往往是业务中所需要的。比如最简单的计算加法的结果，必须要求用户输入运算数字才能够进行计算： 123456789i">
+<meta property="og:description" content="今天学习C++ Primer中的正则表达式部分的时候遇到一个问题，运行书本的程序后，必然会抛出regex_error的异常，在stackoverflow上面看到这是因为编译器版本的问题，我当前的gcc版本是4.8.5，还没能全部支持正则表达式库，需要升级到4.9.2。 升级的方法是从GNU官网上面下载相应的源码，然后本地编译安装。 步骤如下： 123456789101112131415$ wget">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-27T15:04:30.036Z">
+<meta property="og:updated_time" content="2018-05-27T17:21:38.553Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="阻塞模式与轮询模式">
-<meta name="twitter:description" content="在实际编程中，总会遇到一些相似的情况，比如最简单的Hello World程序，程序完成输出的目的后就结束了，这就可以将其总结为一种编程模式：【运行 -&amp;gt; 输出 -&amp;gt; 返回】，在课本的练习中这种模式很常见。 不过，这种模式的功能实在是有限，比如无法交互，无法处理不确定的事件，这往往是业务中所需要的。比如最简单的计算加法的结果，必须要求用户输入运算数字才能够进行计算： 123456789i">
+<meta name="twitter:title" content="CentOS7升级gcc版本">
+<meta name="twitter:description" content="今天学习C++ Primer中的正则表达式部分的时候遇到一个问题，运行书本的程序后，必然会抛出regex_error的异常，在stackoverflow上面看到这是因为编译器版本的问题，我当前的gcc版本是4.8.5，还没能全部支持正则表达式库，需要升级到4.9.2。 升级的方法是从GNU官网上面下载相应的源码，然后本地编译安装。 步骤如下： 123456789101112131415$ wget">
   
     <link rel="alternate" href="/atom.xml" title="Diwen&#39;s Coding Blog" type="application/atom+xml">
   
@@ -153,7 +153,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-阻塞模式与轮询模式" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-CentOS7升级gcc版本" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
@@ -161,7 +161,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      阻塞模式与轮询模式
+      CentOS7升级gcc版本
     </h1>
   
 
@@ -169,13 +169,11 @@
     
     <div class="article-meta">
       
-	<a href="/2018/05/27/阻塞模式与轮询模式/" class="article-date">
-	  <time datetime="2018-05-27T14:28:39.000Z" itemprop="datePublished">2018-05-27</time>
+	<a href="/2018/05/27/CentOS7升级gcc版本/" class="article-date">
+	  <time datetime="2018-05-27T17:13:52.000Z" itemprop="datePublished">2018-05-27</time>
 	</a>
 
       
-    <a class="article-category-link" href="/categories/C-随笔/">C++随笔</a>
-
       
 	<a class="article-views">
 	<span id="busuanzi_container_page_pv">
@@ -186,15 +184,10 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在实际编程中，总会遇到一些相似的情况，比如最简单的Hello World程序，程序完成输出的目的后就结束了，这就可以将其总结为一种编程模式：【运行 -&gt; 输出 -&gt; 返回】，在课本的练习中这种模式很常见。</p>
-<p>不过，这种模式的功能实在是有限，比如无法交互，无法处理不确定的事件，这往往是业务中所需要的。比如最简单的计算加法的结果，必须要求用户输入运算数字才能够进行计算：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">0</span>, b = <span class="number">0</span>;</span><br><span class="line">	<span class="built_in">std</span>::<span class="built_in">cin</span> &gt;&gt; a &gt;&gt; b;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d + %d = %d\n"</span>, a, b, a + b);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>可以把它总结为一种阻塞式的编程模式，在这种模式下，程序会阻塞等待某些事件，这些事件往往是操作系统控制的。比如在程序等待输入时，通过键入一串内容，然后敲下回车，程序就会从终端读取数据。</p>
-<p>但是阻塞模式会遇到一个问题，那就是在阻塞的时候，程序（或者说这个被阻塞的执行线程）什么都做不了。这个时候可以采用轮询的方法，也就是隔一段时间，执行一次处理：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">while</span> (<span class="literal">true</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="comment">// do one thing</span></span><br><span class="line">		<span class="comment">// do another thing</span></span><br><span class="line">		</span><br><span class="line">		sleep(<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>但是要注意的是，轮询中的处理方式都不能是阻塞的，不然就会影响到其他工作的处理了。</p>
-<p>操作系统更喜欢阻塞模式的程序，在Linux系统下，这样的程序会被奖励nice值，从而获得更高的响应速度，而且这样的程序消耗的CPU时间也更少。</p>
-<p>但我觉得阻塞模式的程序不太好设计，因为它更多的涉及到操作系统层面，比如从终端读取输入、进程挂起（pause）、线程锁、socket接受连接等，阻塞的来源和处理的方法都不一样。而轮询的模式仅涉及到像sleep（或者usleep）这样的比较简单的函数，在实际编程中看上去更简洁。</p>
+        <p>今天学习C++ Primer中的正则表达式部分的时候遇到一个问题，运行书本的程序后，必然会抛出regex_error的异常，在stackoverflow上面看到这是因为编译器版本的问题，我当前的gcc版本是4.8.5，还没能全部支持正则表达式库，需要升级到4.9.2。</p>
+<p>升级的方法是从GNU官网上面下载相应的源码，然后本地编译安装。</p>
+<p>步骤如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$ wget http://ftp.gnu.org/gnu/gcc/gcc-4.9.2/gcc-4.9.2.tar.gz</span><br><span class="line">$ tar -xvf gcc-4.9.2.tar.gz</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> gcc-4.9.2</span><br><span class="line">$ ./contrib/download_prerequisites <span class="comment"># 自动解决依赖</span></span><br><span class="line"></span><br><span class="line">$ mkdir build</span><br><span class="line">$ <span class="built_in">cd</span> build</span><br><span class="line"></span><br><span class="line">$ ../configure -<span class="built_in">enable</span>-checking=release -<span class="built_in">enable</span>-languages=c,c++ -<span class="built_in">disable</span>-multilib <span class="comment"># 生成Makefile文件</span></span><br><span class="line"></span><br><span class="line">$ make -j4 <span class="comment"># 编译</span></span><br><span class="line">$ make install</span><br><span class="line"></span><br><span class="line">$ gcc -v</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -234,19 +227,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/05/27/CentOS7升级gcc版本/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          CentOS7升级gcc版本
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/05/27/VirtualBox安装CentOS7及其相关配置/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/05/27/阻塞模式与轮询模式/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">VirtualBox安装CentOS7及其相关配置</div>
+      <div class="article-nav-title">阻塞模式与轮询模式</div>
     </a>
   
 </nav>

@@ -3,23 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>centos7升级gcc版本 | Diwen&#39;s Coding Blog</title>
+  <title>archives: 2018/6 | Diwen&#39;s Coding Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
   
-  <meta name="description" content="今天学习C++ Primer中的正则表达式部分的时候遇到一个问题，运行书本的程序后，必然会抛出regex_error的异常，在stackoverflow上面看到这是因为编译器版本的问题，我当前的gcc版本是4.8.5，还没能全部支持正则表达式库，需要升级到4.9.2。 升级的方法是从GNU官网上面下载相应的源码，然后本地编译安装。 步骤如下： 123456789101112131415$ wget">
-<meta property="og:type" content="article">
-<meta property="og:title" content="CentOS7升级gcc版本">
-<meta property="og:url" content="http://yoursite.com/2018/05/27/CentOS7升级gcc版本/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Diwen&#39;s Coding Blog">
+<meta property="og:url" content="http://yoursite.com/archives/2018/06/index.html">
 <meta property="og:site_name" content="Diwen&#39;s Coding Blog">
-<meta property="og:description" content="今天学习C++ Primer中的正则表达式部分的时候遇到一个问题，运行书本的程序后，必然会抛出regex_error的异常，在stackoverflow上面看到这是因为编译器版本的问题，我当前的gcc版本是4.8.5，还没能全部支持正则表达式库，需要升级到4.9.2。 升级的方法是从GNU官网上面下载相应的源码，然后本地编译安装。 步骤如下： 123456789101112131415$ wget">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-27T17:21:38.553Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CentOS7升级gcc版本">
-<meta name="twitter:description" content="今天学习C++ Primer中的正则表达式部分的时候遇到一个问题，运行书本的程序后，必然会抛出regex_error的异常，在stackoverflow上面看到这是因为编译器版本的问题，我当前的gcc版本是4.8.5，还没能全部支持正则表达式库，需要升级到4.9.2。 升级的方法是从GNU官网上面下载相应的源码，然后本地编译安装。 步骤如下： 123456789101112131415$ wget">
+<meta name="twitter:title" content="Diwen&#39;s Coding Blog">
   
     <link rel="alternate" href="/atom.xml" title="Diwen&#39;s Coding Blog" type="application/atom+xml">
   
@@ -58,6 +54,8 @@
   
 
   
+    <link rel="stylesheet" href="/css/archive.css" >
+  
   
   
 
@@ -65,7 +63,7 @@
 
 
 
-  <body data-spy="scroll" data-target="#toc" data-offset="50">
+  <body>
 
 
   
@@ -88,7 +86,7 @@
             
               <a class="brand" style="
                  margin-top: 0px;"  
-                href="#" data-toggle="modal" data-target="#myModal" >
+                 >
                   <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo1.jpg">
               </a>
             
@@ -153,111 +151,157 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-CentOS7升级gcc版本" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
+          <section id="main">
+  <div class="archives-tags-wrap"><blockquote><span>There are 6 posts in total till now.</span></blockquote>
+
+
+<!-- 分页显示 -->
+
+	
+	
+		
+		
+		  
+		  
+		  <section class="archives-wrap">
+		    <div class="archive-year-wrap">
+		      <h1><a href="/archives/2018" class="archive-year">2018</a></h1>
+		    </div>
+		    <div class="archives">
+		
+		<article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      
+	<a href="/2018/06/02/层级式的数据结构/" class="archive-article-date">
+	  <time datetime="2018-06-03T03:47:00.000Z" itemprop="datePublished">2018-06-02</time>
+	</a>
+
+      
   
-    <h1 class="thumb" class="article-title" itemprop="name">
-      CentOS7升级gcc版本
+    <h1 class="thumb" itemprop="name">
+      <a class="archive-article-title" href="/2018/06/02/层级式的数据结构/">层级式的数据结构</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/05/27/CentOS7升级gcc版本/" class="article-date">
-	  <time datetime="2018-05-27T17:13:52.000Z" itemprop="datePublished">2018-05-27</time>
-	</a>
-
-      
-      
-	<a class="article-views">
-	<span id="busuanzi_container_page_pv">
-		PV:<span id="busuanzi_value_page_pv"></span>
-	</span>
-	</a>
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天学习C++ Primer中的正则表达式部分的时候遇到一个问题，运行书本的程序后，必然会抛出regex_error的异常，在stackoverflow上面看到这是因为编译器版本的问题，我当前的gcc版本是4.8.5，还没能全部支持正则表达式库，需要升级到4.9.2。</p>
-<p>升级的方法是从GNU官网上面下载相应的源码，然后本地编译安装。</p>
-<p>步骤如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$ wget http://ftp.gnu.org/gnu/gcc/gcc-4.9.2/gcc-4.9.2.tar.gz</span><br><span class="line">$ tar -xvf gcc-4.9.2.tar.gz</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> gcc-4.9.2</span><br><span class="line">$ ./contrib/download_prerequisites <span class="comment"># 自动解决依赖</span></span><br><span class="line"></span><br><span class="line">$ mkdir build</span><br><span class="line">$ <span class="built_in">cd</span> build</span><br><span class="line"></span><br><span class="line">$ ../configure -<span class="built_in">enable</span>-checking=release -<span class="built_in">enable</span>-languages=c,c++ -<span class="built_in">disable</span>-multilib <span class="comment"># 生成Makefile文件</span></span><br><span class="line"></span><br><span class="line">$ make -j4 <span class="comment"># 编译</span></span><br><span class="line">$ make install</span><br><span class="line"></span><br><span class="line">$ gcc -v</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-        
-	<div id="comment">
-		<!-- 来必力City版安装代码 -->
-		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
-		<script type="text/javascript">
-		   (function(d, s) {
-		       var j, e = d.getElementsByTagName(s)[0];
-
-		       if (typeof LivereTower === 'function') { return; }
-
-		       j = d.createElement(s);
-		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-		       j.async = true;
-
-		       e.parentNode.insertBefore(j, e);
-		   })(document, 'script');
-		</script>
-		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-		</div>
-		<!-- City版安装代码已完成 -->
-	</div>
-
-
-
-      
-      
-
-    </footer>
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2018/06/02/层级式的数据结构/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          层级式的数据结构
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2018/05/27/阻塞模式与轮询模式/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">阻塞模式与轮询模式</div>
-    </a>
-  
-</nav>
-
-  
 </article>
+	
+	
+		</div></section>
+	
 
-<!-- Table of Contents -->
+	<!-- 页数指示器 -->
+	
 
-  <aside id="toc-sidebar">
-    <div id="toc" class="toc-article">
-    <strong class="toc-title">Contents</strong>
-    
-        <ol class="nav">None</ol>
-    
-    </div>
-  </aside>
+
+
+
 </section>
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Connect</h3>
+    <div class="widget widget_athemes_social_icons">
+
+    	<ul class="clearfix widget-social-icons">   
+    	
+          
+     			  <li><a href="https://github.com/demon90s" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
+          
+   		
+   		</ul>
+
+
+   		<!--
+   		<ul class="clearfix widget-social-icons">   		
+   		<li class="widget-si-twitter"><a href="http://twitter.com" title="Twitter"><i class="ico-twitter"></i></a></li> 
+		<li class="widget-si-facebook"><a href="http://facebook.com" title="Facebook"><i class="ico-facebook"></i></a></li>
+			<li class="widget-si-gplus"><a href="http://plus.google.com" title="Google+"><i class="ico-gplus"></i></a></li>
+			<li class="widget-si-pinterest"><a href="http://pinterest.com" title="Pinterest"><i class="ico-pinterest"></i></a></li>
+			<li class="widget-si-flickr"><a href="http://flickr.com" title="Flickr"><i class="ico-flickr"></i></a></li>
+			<li class="widget-si-instagram"><a href="http://instagram.com" title="Instagram"><i class="ico-instagram"></i></a></li>
+		</ul> -->
+
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C-随笔/">C++随笔</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/C/" style="font-size: 10px;">C++</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/06/02/层级式的数据结构/">层级式的数据结构</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/27/CentOS7升级gcc版本/">CentOS7升级gcc版本</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/27/阻塞模式与轮询模式/">阻塞模式与轮询模式</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/27/VirtualBox安装CentOS7及其相关配置/">VirtualBox安装CentOS7及其相关配置</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/27/C-显式转换和C语言的强制类型转换之间的区别/">C++显式转换和C语言的强制类型转换之间的区别</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
         
       </div>
       
@@ -349,8 +393,6 @@
 
 
 
-  <script src="/js/dialog.js"></script>
-
 
 
 
@@ -434,8 +476,6 @@
   
   <a id="rocket" href="#top" class=""></a>
   <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
-  
-    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
   
 </body>
 </html>

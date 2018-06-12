@@ -209,6 +209,67 @@
         
           <section id="main" style="float:none;">
   
+    <article id="post-使用ssh公钥登陆Linux"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/06/12/使用ssh公钥登陆Linux/">使用ssh公钥登陆Linux</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/06/12/使用ssh公钥登陆Linux/" class="article-date">
+	  <time datetime="2018-06-12T14:17:11.000Z" itemprop="datePublished">2018-06-12</time>
+	</a>
+
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          使用ssh登陆Linux系统有两种方式：
+
+使用密码
+
+使用公钥认证，双方各持公钥，客户机还会持有私钥
+
+
+相对于使用密码，公钥认证的方式更加安全。
+屏蔽密码登陆
+修改文件：/etc/ssh/sshd_config
+设置字段：PasswordAuthentication no
+重启sshd服务：
+1$ systemctl restart sshd
+生成密钥
+1$ ssh-keygen -t rsa
+连续敲击三次回车生成密钥至目录：~/.ssh，id_rsa.pub即是要给服务端的公钥，id...
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/06/12/使用ssh公钥登陆Linux/#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-搭建svn服务器"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     

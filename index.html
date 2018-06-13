@@ -209,6 +209,56 @@
         
           <section id="main" style="float:none;">
   
+    <article id="post-关于控制变量的思考"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/06/13/关于控制变量的思考/">关于控制变量的思考</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/06/13/关于控制变量的思考/" class="article-date">
+	  <time datetime="2018-06-13T15:04:59.000Z" itemprop="datePublished">2018-06-13</time>
+	</a>
+
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          在编写业务逻辑时候，经常会使用一些控制变量来控制一些逻辑。比如控制怪物刷新可能需要一个刷新时间戳。
+控制变量需要设计得很精简，才不至于出现问题，才不至于在出现问题时候定位困难。通常情况下，控制变量会有这样的流程：
+设置值 -&gt; 判断触发 -&gt; 重置值
+一个简单的例子：
+12345678910111213141516class SomeEvent&#123;public:	Update()	&#123;		// 判断触发		if (m_is_first)		&#123;			m_...
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/06/13/关于控制变量的思考/#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-使用ssh公钥登陆Linux"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     

@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>使用ssh公钥登陆linux | Diwen&#39;s Coding Blog</title>
+  <title>关于控制变量的思考 | Diwen&#39;s Coding Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
   
-  <meta name="description" content="使用ssh登陆Linux系统有两种方式：  使用密码  使用公钥认证，双方各持公钥，客户机还会持有私钥   相对于使用密码，公钥认证的方式更加安全。 屏蔽密码登陆 修改文件：/etc/ssh/sshd_config 设置字段：PasswordAuthentication no 重启sshd服务： 1$ systemctl restart sshd 生成密钥 1$ ssh-keygen -t rsa">
+  <meta name="description" content="在编写业务逻辑时候，经常会使用一些控制变量来控制一些逻辑。比如控制怪物刷新可能需要一个刷新时间戳。 控制变量需要设计得很精简，才不至于出现问题，才不至于在出现问题时候定位困难。通常情况下，控制变量会有这样的流程： 设置值 -&amp;gt; 判断触发 -&amp;gt; 重置值 一个简单的例子： 12345678910111213141516class SomeEvent&amp;#123;public:	Update(">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用ssh公钥登陆Linux">
-<meta property="og:url" content="http://yoursite.com/2018/06/12/使用ssh公钥登陆Linux/index.html">
+<meta property="og:title" content="关于控制变量的思考">
+<meta property="og:url" content="http://yoursite.com/2018/06/13/关于控制变量的思考/index.html">
 <meta property="og:site_name" content="Diwen&#39;s Coding Blog">
-<meta property="og:description" content="使用ssh登陆Linux系统有两种方式：  使用密码  使用公钥认证，双方各持公钥，客户机还会持有私钥   相对于使用密码，公钥认证的方式更加安全。 屏蔽密码登陆 修改文件：/etc/ssh/sshd_config 设置字段：PasswordAuthentication no 重启sshd服务： 1$ systemctl restart sshd 生成密钥 1$ ssh-keygen -t rsa">
+<meta property="og:description" content="在编写业务逻辑时候，经常会使用一些控制变量来控制一些逻辑。比如控制怪物刷新可能需要一个刷新时间戳。 控制变量需要设计得很精简，才不至于出现问题，才不至于在出现问题时候定位困难。通常情况下，控制变量会有这样的流程： 设置值 -&amp;gt; 判断触发 -&amp;gt; 重置值 一个简单的例子： 12345678910111213141516class SomeEvent&amp;#123;public:	Update(">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-12T14:29:03.016Z">
+<meta property="og:updated_time" content="2018-06-13T15:35:36.129Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用ssh公钥登陆Linux">
-<meta name="twitter:description" content="使用ssh登陆Linux系统有两种方式：  使用密码  使用公钥认证，双方各持公钥，客户机还会持有私钥   相对于使用密码，公钥认证的方式更加安全。 屏蔽密码登陆 修改文件：/etc/ssh/sshd_config 设置字段：PasswordAuthentication no 重启sshd服务： 1$ systemctl restart sshd 生成密钥 1$ ssh-keygen -t rsa">
+<meta name="twitter:title" content="关于控制变量的思考">
+<meta name="twitter:description" content="在编写业务逻辑时候，经常会使用一些控制变量来控制一些逻辑。比如控制怪物刷新可能需要一个刷新时间戳。 控制变量需要设计得很精简，才不至于出现问题，才不至于在出现问题时候定位困难。通常情况下，控制变量会有这样的流程： 设置值 -&amp;gt; 判断触发 -&amp;gt; 重置值 一个简单的例子： 12345678910111213141516class SomeEvent&amp;#123;public:	Update(">
   
     <link rel="alternate" href="/atom.xml" title="Diwen&#39;s Coding Blog" type="application/atom+xml">
   
@@ -153,7 +153,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-使用ssh公钥登陆Linux" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-关于控制变量的思考" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
@@ -161,7 +161,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      使用ssh公钥登陆Linux
+      关于控制变量的思考
     </h1>
   
 
@@ -169,8 +169,8 @@
     
     <div class="article-meta">
       
-	<a href="/2018/06/12/使用ssh公钥登陆Linux/" class="article-date">
-	  <time datetime="2018-06-12T14:17:11.000Z" itemprop="datePublished">2018-06-12</time>
+	<a href="/2018/06/13/关于控制变量的思考/" class="article-date">
+	  <time datetime="2018-06-13T15:04:59.000Z" itemprop="datePublished">2018-06-13</time>
 	</a>
 
       
@@ -184,35 +184,15 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>使用ssh登陆Linux系统有两种方式：</p>
-<ol>
-<li><p>使用密码</p>
-</li>
-<li><p>使用公钥认证，双方各持公钥，客户机还会持有私钥</p>
-</li>
-</ol>
-<p>相对于使用密码，公钥认证的方式更加安全。</p>
-<p><strong>屏蔽密码登陆</strong></p>
-<p>修改文件：/etc/ssh/sshd_config</p>
-<p>设置字段：PasswordAuthentication no</p>
-<p>重启sshd服务：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ systemctl restart sshd</span><br></pre></td></tr></table></figure>
-<p><strong>生成密钥</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
-<p>连续敲击三次回车生成密钥至目录：~/.ssh，id_rsa.pub即是要给服务端的公钥，id_rsa是客户机保留的私钥。</p>
-<p>如果是windows系统，则可以使用SecureCRT工具生成：工具-&gt;创建公钥，一些关键步骤是：</p>
-<ul>
-<li><p>密钥类型选择RSA</p>
-</li>
-<li><p>密钥格式选择OpenSSH</p>
-</li>
-<li><p>可以自定义密钥名</p>
-</li>
-</ul>
-<p>其余保持默认即可。</p>
-<p><strong>加入公钥认证</strong></p>
-<p>将公钥的内容加入到文件： ~/.ssh/authorized_keys</p>
-<p>重启sshd服务。</p>
+        <p>在编写业务逻辑时候，经常会使用一些控制变量来控制一些逻辑。比如控制怪物刷新可能需要一个刷新时间戳。</p>
+<p>控制变量需要设计得很精简，才不至于出现问题，才不至于在出现问题时候定位困难。通常情况下，控制变量会有这样的流程：</p>
+<p>设置值 -&gt; 判断触发 -&gt; 重置值</p>
+<p>一个简单的例子：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeEvent</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	Update()</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="comment">// 判断触发</span></span><br><span class="line">		<span class="keyword">if</span> (m_is_first)</span><br><span class="line">		&#123;</span><br><span class="line">			m_is_first = <span class="literal">false</span>; <span class="comment">// 重置值</span></span><br><span class="line">			<span class="comment">// do something for first time ...</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	<span class="keyword">bool</span> m_is_first = <span class="literal">true</span>;	<span class="comment">// 设置值，是否是第一次Update</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>但是，又由于它实在是太简单了，用一个unsigned int或者bool就可以表示，以至于在使用的时候过于随意，甚至写出无用的代码。虽然说无用，但无形中可能会增加排错的成本和修改逻辑的成本。</p>
+<p>上面的例子还是过于简单，问题不是很明显。一旦一个控制变量的“用户”多了起来，就会感觉十分棘手。这里的用户即是函数。个人感觉，判断触发和重置值应该写在一起，并且只有一处使用。然后通过设置值来进行控制。</p>
+<p>在做判断触发的时候，尽量把控制变量委托给定义为const的临时变量，尽量不要与外界的其他逻辑杂糅。因此可能还需要再制造一个Reset方法，并保证只有在触发的时候Reset。感觉这样的流程才清晰很多。再用简单的代码给一个例子：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MonsterFlush</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">pubclic:</span><br><span class="line">	MonsterFlush() : m_next_flush_time(<span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">auto</span> next_flush_time = <span class="keyword">this</span>-&gt;CalcNextFlushTime();</span><br><span class="line">		<span class="keyword">if</span> (next_flush_time &gt; <span class="number">0</span>)</span><br><span class="line">			m_next_flush_time = next_flush_time;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">ResetNextFlushTime</span><span class="params">()</span> </span>&#123; m_next_flush_time = <span class="number">0</span> &#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> CalcNextFlushTime() &#123; <span class="comment">/* ...  */</span> &#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">void</span> Update(<span class="keyword">unsigned</span> <span class="keyword">int</span> now_time)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (m_next_flush_time &gt; <span class="number">0</span> &amp;&amp; now_time &gt;= m_next_flush_time)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="comment">// flush monster</span></span><br><span class="line"></span><br><span class="line">			<span class="keyword">this</span>-&gt;ResetNextFlushTime(); <span class="comment">// 只要只有一个地方Reset控制变量，就能放心锁定刷新逻辑的位置</span></span><br><span class="line"></span><br><span class="line">			<span class="keyword">auto</span> next_flush_time = <span class="keyword">this</span>-&gt;CalcNextFlushTime();</span><br><span class="line">			<span class="keyword">if</span> (next_flush_time &gt; <span class="number">0</span>)</span><br><span class="line">				m_next_flush_time = next_flush_time;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">OnGMFlushNow</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		m_next_flush_time = (<span class="keyword">unsigned</span> <span class="keyword">int</span>)time(<span class="number">0</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> m_next_flush_time = <span class="number">0</span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -252,19 +232,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/06/13/关于控制变量的思考/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          关于控制变量的思考
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/06/08/搭建svn服务器/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/06/12/使用ssh公钥登陆Linux/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">搭建svn服务器</div>
+      <div class="article-nav-title">使用ssh公钥登陆Linux</div>
     </a>
   
 </nav>

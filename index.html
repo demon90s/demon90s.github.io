@@ -209,6 +209,108 @@
         
           <section id="main" style="float:none;">
   
+    <article id="post-VirtualBox挂载新的硬盘"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/10/06/VirtualBox挂载新的硬盘/">VirtualBox挂载新的硬盘</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/10/06/VirtualBox挂载新的硬盘/" class="article-date">
+	  <time datetime="2018-10-06T09:35:13.000Z" itemprop="datePublished">2018-10-06</time>
+	</a>
+
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          添加硬盘、分区、格式化添加一个硬盘：
+先关闭虚拟机。设置 -&gt; 存储 -&gt; SATA控制器，右键，选择添加虚拟硬盘，根据向导创建一个硬盘。
+查看现有系统的磁盘空间：
+1sudo fdisk -l
+新添加的虚拟硬盘一般名称是：Disk /dev/sdb
+PS: sda, sdb, sdc … 这样顺下去
+给新加的硬盘分区：
+123456789101112131415161718fdisk /dev/sdb# 键入m查看帮助信息command(m for help):m# 增加新分...
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/10/06/VirtualBox挂载新的硬盘/#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-最近的工作和学习"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/10/05/最近的工作和学习/">最近的工作和学习</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/10/05/最近的工作和学习/" class="article-date">
+	  <time datetime="2018-10-05T14:45:56.000Z" itemprop="datePublished">2018-10-05</time>
+	</a>
+
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          很长一段时间没有整理思绪了。
+我愈发懒得在博客中写一些技术向的笔记了，不是不写，而是倾向于写成本地 markdown 文本的方式，然后通过 svn 提交到自己的云仓库中。我使用 sublime 来管理这些笔记，查询效率会更快。唯一的缺点就是不能在任意一台电脑上搜索笔记了。
+工作上我的权力更多了一些，但所需的管理能力尚欠缺，我仍没有探得门路，只是隐约感觉需要制定一套方略，适用自己的，且有效的协同工作的方法。使得大家能够正常完成工作的同时，获得一份收获，这个收获可能是一种成就感。
+最近主要还是...
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/10/05/最近的工作和学习/#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-编程工作值得敬畏"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
@@ -602,129 +704,6 @@ CentOS7可能已经默认安装了svn服务器，输入下列命令验证：
         </p>
         <p class="article-more-link">
           <a href="/2018/05/27/阻塞模式与轮询模式/#more">Read More</a>
-        </p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
-    <article id="post-VirtualBox安装CentOS7及其相关配置"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/05/27/VirtualBox安装CentOS7及其相关配置/">VirtualBox安装CentOS7及其相关配置</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/05/27/VirtualBox安装CentOS7及其相关配置/" class="article-date">
-	  <time datetime="2018-05-26T21:22:10.000Z" itemprop="datePublished">2018-05-27</time>
-	</a>
-
-      
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p class="article-excerpt-content">
-          安装准备
-VirtualBox我是在电脑管家应用中心下载的，是一个免费的虚拟机软件
-CentOS 7的镜像我是在CentOS官方网站下载的，DVD ISO版本，也可以直接在这里找：下载地址
-
-VirtualBox安装默认步骤就可以安装了。
-CentOS 7安装
-打开VirtualBox，点击新建（ctrl +　n）
-
-填写如下配置：
-
-
-
-
-接下来是配置设置，保持默认选项就可以了，创建成功。
-
-点击启动，首次启动会选择一个启动盘，选择CentOS 7的镜像文件启动
-
-选择Install C...
-        </p>
-        <p class="article-more-link">
-          <a href="/2018/05/27/VirtualBox安装CentOS7及其相关配置/#more">Read More</a>
-        </p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
-    <article id="post-C-显式转换和C语言的强制类型转换之间的区别"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/05/27/C-显式转换和C语言的强制类型转换之间的区别/">C++显式转换和C语言的强制类型转换之间的区别</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/05/27/C-显式转换和C语言的强制类型转换之间的区别/" class="article-date">
-	  <time datetime="2018-05-26T18:25:38.000Z" itemprop="datePublished">2018-05-27</time>
-	</a>
-
-      
-    <a class="article-category-link" href="/categories/C-随笔/">C++随笔</a>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p class="article-excerpt-content">
-          C语言的强制类型转换的功能更通用，即它具有static_cast, const_cast和reinterpret_cast相似的行为。
-关于显式类型转换：
-
-static_cast只能应用于明确定义了的类型转换，并且不能用于底层const（lower const）的转换。
-
-const_cast只能改变底层const
-
-reinterpret_cast通常用于重新解释一个指针类型，使用需小心。
-
-
-C语言的强制类型转换没有细分的这么明显，它拥有了这三者的功能。
-见代码：
-123456789...
-        </p>
-        <p class="article-more-link">
-          <a href="/2018/05/27/C-显式转换和C语言的强制类型转换之间的区别/#more">Read More</a>
         </p>
       
     </div>

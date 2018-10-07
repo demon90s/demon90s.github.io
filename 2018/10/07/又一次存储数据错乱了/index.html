@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>两片乌云 | Diwen&#39;s Coding Blog</title>
+  <title>又一次存储数据错乱了 | Diwen&#39;s Coding Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
   
-  <meta name="description" content="今天工作上遇到两个问题，没有解决，内心烦闷，只得写下来缓缓内心的不愉快。 一个是外服部分的玩家进不了跨服，调试过程很艰辛，但重启了跨服之后就好了。我让运营给了我外服的游戏包，以后自己上号调试，这样会方便很多。 另一个是 g2 重启后数据出现了问题，据反映，玩家很多数据都清零了。虽然这个项目不是我负责的，但是我也看了下，不是很容易找到原因，也没有头绪。这个结果是比较严重的，我建议回档到发版前看看。我">
+  <meta name="description" content="今天策划提交配置重启后，一登陆即挂掉。原因是血量溢出了。但找了一段时间才找出深层次的原因。也就是玩家的这个系统的数据已经乱了，有一个几万的等级数值，乘以基础血量后就溢出了。 那么缘何数据错乱呢？在于9月份做的一次扩展，这个扩展已经上线了，也就是说外服的玩家数据都已乱。观察了代码，还是可以补救的。这个扩展虽然做了，但是配置没有扩展，所以没有触发bug。这次扩展了配置，我就要做这个补救了。 对于经验丰">
 <meta property="og:type" content="article">
-<meta property="og:title" content="两片乌云">
-<meta property="og:url" content="http://yoursite.com/2018/10/07/两片乌云/index.html">
+<meta property="og:title" content="又一次存储数据错乱了">
+<meta property="og:url" content="http://yoursite.com/2018/10/07/又一次存储数据错乱了/index.html">
 <meta property="og:site_name" content="Diwen&#39;s Coding Blog">
-<meta property="og:description" content="今天工作上遇到两个问题，没有解决，内心烦闷，只得写下来缓缓内心的不愉快。 一个是外服部分的玩家进不了跨服，调试过程很艰辛，但重启了跨服之后就好了。我让运营给了我外服的游戏包，以后自己上号调试，这样会方便很多。 另一个是 g2 重启后数据出现了问题，据反映，玩家很多数据都清零了。虽然这个项目不是我负责的，但是我也看了下，不是很容易找到原因，也没有头绪。这个结果是比较严重的，我建议回档到发版前看看。我">
+<meta property="og:description" content="今天策划提交配置重启后，一登陆即挂掉。原因是血量溢出了。但找了一段时间才找出深层次的原因。也就是玩家的这个系统的数据已经乱了，有一个几万的等级数值，乘以基础血量后就溢出了。 那么缘何数据错乱呢？在于9月份做的一次扩展，这个扩展已经上线了，也就是说外服的玩家数据都已乱。观察了代码，还是可以补救的。这个扩展虽然做了，但是配置没有扩展，所以没有触发bug。这次扩展了配置，我就要做这个补救了。 对于经验丰">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-07T00:25:55.955Z">
+<meta property="og:updated_time" content="2018-10-07T01:16:42.659Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="两片乌云">
-<meta name="twitter:description" content="今天工作上遇到两个问题，没有解决，内心烦闷，只得写下来缓缓内心的不愉快。 一个是外服部分的玩家进不了跨服，调试过程很艰辛，但重启了跨服之后就好了。我让运营给了我外服的游戏包，以后自己上号调试，这样会方便很多。 另一个是 g2 重启后数据出现了问题，据反映，玩家很多数据都清零了。虽然这个项目不是我负责的，但是我也看了下，不是很容易找到原因，也没有头绪。这个结果是比较严重的，我建议回档到发版前看看。我">
+<meta name="twitter:title" content="又一次存储数据错乱了">
+<meta name="twitter:description" content="今天策划提交配置重启后，一登陆即挂掉。原因是血量溢出了。但找了一段时间才找出深层次的原因。也就是玩家的这个系统的数据已经乱了，有一个几万的等级数值，乘以基础血量后就溢出了。 那么缘何数据错乱呢？在于9月份做的一次扩展，这个扩展已经上线了，也就是说外服的玩家数据都已乱。观察了代码，还是可以补救的。这个扩展虽然做了，但是配置没有扩展，所以没有触发bug。这次扩展了配置，我就要做这个补救了。 对于经验丰">
   
     <link rel="alternate" href="/atom.xml" title="Diwen&#39;s Coding Blog" type="application/atom+xml">
   
@@ -153,7 +153,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-两片乌云" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-又一次存储数据错乱了" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
@@ -161,7 +161,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      两片乌云
+      又一次存储数据错乱了
     </h1>
   
 
@@ -169,13 +169,11 @@
     
     <div class="article-meta">
       
-	<a href="/2018/10/07/两片乌云/" class="article-date">
-	  <time datetime="2018-10-07T00:21:03.000Z" itemprop="datePublished">2018-10-07</time>
+	<a href="/2018/10/07/又一次存储数据错乱了/" class="article-date">
+	  <time datetime="2018-10-07T01:06:01.000Z" itemprop="datePublished">2018-10-07</time>
 	</a>
 
       
-    <a class="article-category-link" href="/categories/dialog/">dialog</a>
-
       
 	<a class="article-views">
 	<span id="busuanzi_container_page_pv">
@@ -186,9 +184,11 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天工作上遇到两个问题，没有解决，内心烦闷，只得写下来缓缓内心的不愉快。</p>
-<p>一个是外服部分的玩家进不了跨服，调试过程很艰辛，但重启了跨服之后就好了。我让运营给了我外服的游戏包，以后自己上号调试，这样会方便很多。</p>
-<p>另一个是 g2 重启后数据出现了问题，据反映，玩家很多数据都清零了。虽然这个项目不是我负责的，但是我也看了下，不是很容易找到原因，也没有头绪。这个结果是比较严重的，我建议回档到发版前看看。我自己猜测是过长时间没有重启，数据库缓存出现了奇怪的故障。</p>
+        <p>今天策划提交配置重启后，一登陆即挂掉。原因是血量溢出了。但找了一段时间才找出深层次的原因。也就是玩家的这个系统的数据已经乱了，有一个几万的等级数值，乘以基础血量后就溢出了。</p>
+<p>那么缘何数据错乱呢？在于9月份做的一次扩展，这个扩展已经上线了，也就是说外服的玩家数据都已乱。观察了代码，还是可以补救的。这个扩展虽然做了，但是配置没有扩展，所以没有触发bug。这次扩展了配置，我就要做这个补救了。</p>
+<p>对于经验丰富的我，犯下这个错误实在不应该，就是因为改了一个数组的长度造成的，总之疏忽大意了。要好好总结经验教训啊！本身我是不想做这个扩展的，因为每次扩展都需要很小心才行，一个大意就会造成严重的后果。而且这样的扩展意味着丢弃以往的数据，浪费了一大块的存储空间。这时候需要考虑做一个有版本兼容的存储结构，以应对这种扩展。</p>
+<p>先酝酿酝酿吧！</p>
+<p>最近也深感瓶颈，觉得很难有大幅度的提高，对此内心挺煎熬的。</p>
 
       
     </div>
@@ -228,19 +228,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/10/07/又一次存储数据错乱了-md/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          又一次存储数据错乱了.md
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/10/06/VirtualBox挂载新的硬盘/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/10/07/又一次存储数据错乱了-md/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">VirtualBox挂载新的硬盘</div>
+      <div class="article-nav-title">又一次存储数据错乱了.md</div>
     </a>
   
 </nav>
